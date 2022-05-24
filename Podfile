@@ -5,10 +5,10 @@ target 'SwiftPayKit' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SwiftPayKit
-#  pod  'AlipaySDK-iOS'
-#  pod 'WechatOpenSDK'
-#  pod 'UnionPaySDK'
+#   Pods for SwiftPayKit
+  pod  'AlipaySDK-iOS'
+  pod 'WechatOpenSDK'
+  pod 'UnionPaySDK'
   
   target 'SwiftPayKitTests' do
     inherit! :search_paths
