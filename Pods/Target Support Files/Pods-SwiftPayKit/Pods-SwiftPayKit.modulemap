@@ -1,0 +1,6 @@
+framework module Pods_SwiftPayKit {
+  umbrella header "Pods-SwiftPayKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

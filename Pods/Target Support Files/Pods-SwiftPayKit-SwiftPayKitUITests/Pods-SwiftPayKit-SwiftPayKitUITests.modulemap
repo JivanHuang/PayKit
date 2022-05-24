@@ -1,0 +1,6 @@
+framework module Pods_SwiftPayKit_SwiftPayKitUITests {
+  umbrella header "Pods-SwiftPayKit-SwiftPayKitUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
