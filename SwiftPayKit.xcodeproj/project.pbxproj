@@ -194,6 +194,7 @@
 				8C2B814A283B7404001D35C4 /* Sources */,
 				8C2B814B283B7404001D35C4 /* Frameworks */,
 				8C2B814C283B7404001D35C4 /* Resources */,
+				41CCCF0D61DDC79619D545C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +232,7 @@
 				8C2B816A283B740E001D35C4 /* Sources */,
 				8C2B816B283B740E001D35C4 /* Frameworks */,
 				8C2B816C283B740E001D35C4 /* Resources */,
+				1D8FADA176BB45CD1E0048FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +316,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D8FADA176BB45CD1E0048FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit-SwiftPayKitUITests/Pods-SwiftPayKit-SwiftPayKitUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit-SwiftPayKitUITests/Pods-SwiftPayKit-SwiftPayKitUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit-SwiftPayKitUITests/Pods-SwiftPayKit-SwiftPayKitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41CCCF0D61DDC79619D545C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit/Pods-SwiftPayKit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit/Pods-SwiftPayKit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPayKit/Pods-SwiftPayKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7BA80B7AB8251A3392C91E60 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

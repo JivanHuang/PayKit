@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 4c265a887e105a4f1f1a47b8dc7aee6d1793ac58
+PODS:
+  - AlipaySDK-iOS (15.8.8)
+  - UnionPaySDK (0.0.2)
+  - WechatOpenSDK (1.8.7.1)
+
+DEPENDENCIES:
+  - AlipaySDK-iOS
+  - UnionPaySDK
+  - WechatOpenSDK
+
+SPEC REPOS:
+  trunk:
+    - AlipaySDK-iOS
+    - UnionPaySDK
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  AlipaySDK-iOS: 9289d94792535cd14c5c241c720a7e981edd7035
+  UnionPaySDK: 7d8721671c5d693d37e42ee1baa3d22977805fbb
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+
+PODFILE CHECKSUM: 68e8fe784b72508261dbc404f1b00c9cfac78f80
 
 COCOAPODS: 1.11.3
