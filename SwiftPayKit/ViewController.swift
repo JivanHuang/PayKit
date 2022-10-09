@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let orderInfo = AlilPayOrderInfo(scheme: "", orderString: "")
+        let orderInfo = AlilPayOrderInfo(orderString: "")
         PayKit.shared.payOrder(orderInfo: orderInfo) { success, payCode, result in
             
         }
