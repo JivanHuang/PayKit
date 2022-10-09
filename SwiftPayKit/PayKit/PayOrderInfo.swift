@@ -24,9 +24,7 @@ public protocol PayService {
 }
 
 public struct AlilPayOrderInfo: PayService {
-    public var serviceType: PayServiceType {
-        .AliPay
-    }
+    public var serviceType: PayServiceType = .AliPay
 
     /// 用于支付结果回调
     var scheme: String
@@ -35,9 +33,7 @@ public struct AlilPayOrderInfo: PayService {
 }
 
 public struct WXPayOrderInfo: PayService {
-    public var serviceType: PayServiceType {
-        .WXPay
-    }
+    public var serviceType: PayServiceType = .WXPay
 
     /// 由用户微信号和AppID组成的唯一标识，发送请求时第三方程序必须填写，用于校验微信用户是否换号登录
     var openID: String
@@ -56,11 +52,9 @@ public struct WXPayOrderInfo: PayService {
 }
 
 public struct UnionPayOrderInfo: PayService {
-    public var serviceType: PayServiceType {
-        .UnionPay
-    }
+    public var serviceType: PayServiceType = .UnionPay
 
-    /// 支付环境 01:测试环境 00:生产环境
+    /// 支付环境   01:测试环境 00:生产环境
     var mode: String
     /// 用于支付结果回调
     var scheme: String
