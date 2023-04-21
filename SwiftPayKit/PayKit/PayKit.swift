@@ -116,7 +116,7 @@ extension PayKit: WXApiDelegate {
 public extension PayKit {
     func handleOpenURL(url: URL) {
         switch url.scheme {
-        case PayScheme.AliPayScheme.rawValue:
+        case PayScheme.AliPay.rawValue:
             if let host = url.host {
                 if host == "safepay" {
                     // 支付宝客户端支付
@@ -161,9 +161,9 @@ public extension PayKit {
                     }
                 }
             }
-        case PayScheme.WXPayScheme.rawValue:
+        case PayScheme.WXPay.rawValue:
             WXApi.handleOpen(url, delegate: PayKit.shared)
-        case PayScheme.UnionPayScheme.rawValue:
+        case PayScheme.UnionPay.rawValue:
             if let host = url.host, host == "uppayresult" || host == "paydemo" {
                 UPPaymentControl.default().handlePaymentResult(url) { [weak self] code, data in
 

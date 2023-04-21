@@ -14,9 +14,9 @@ public enum PayServiceType {
 }
 
 public enum PayScheme: String {
-    case AliPayScheme = "AliPayScheme..."
-    case WXPayScheme = "WXPayScheme..."
-    case UnionPayScheme = "UnionPayScheme..."
+    case AliPay = "AliPayScheme..."
+    case WXPay = "WXPayScheme..."
+    case UnionPay = "UnionPayScheme..."
 }
 
 public protocol PayService {
@@ -27,7 +27,7 @@ public struct AlilPayOrderInfo: PayService {
     /// 服务类型
     public var serviceType: PayServiceType = .AliPay
     /// 用于支付结果回调
-    var scheme: String = PayScheme.AliPayScheme.rawValue
+    var scheme: String = PayScheme.AliPay.rawValue
     /// 向服务获取的经过签名加密的订单字符串
     var orderString: String
 }
@@ -57,7 +57,7 @@ public struct UnionPayOrderInfo: PayService {
     /// 支付环境   01:测试环境 00:生产环境
     var mode: String
     /// 用于支付结果回调
-    var scheme: String = PayScheme.UnionPayScheme.rawValue
+    var scheme: String = PayScheme.UnionPay.rawValue
     /// 向服务获取的经过签名加密的订单字符串
     var orderString: String
     /// 启动支付控件的viewController
